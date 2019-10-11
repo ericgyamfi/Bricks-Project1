@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <script src="/validate.js"></script>
+    <title>Login page</title>
+  </head>
+
+  <body>
+    <h1
+      style="color: cornflowerblue;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+    >
+      Welcome to the Quintanica Registery
+    </h1>
+    <form class="border-class">
+      <a class="btn btn-primary" href="#"><i class="icon-user"></i> User</a>
+      <h1>Login</h1>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Password"
+        />
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          ><a href="" onclick="myFunction()">... Login Credentials</a></label
+        >
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        style="width: 100%;"
+        id="submit"
+        onclick="validate()"
+      >
+        Login
+      </button>
+    </form>
+  </body>
+</html>
